@@ -46,7 +46,7 @@ $length=count($match[1]);
 $count=0;
 $postmessage="";
 for ($i=0; $i < $length ; $i++) {
-	$message=$match[6][$i]."/".$match[7][$i]." ".$match[1][$i]." ".$match[2][$i]."：".$match[4][$i]."  ".get_redirect_url("http://www.tngs.tn.edu.tw".$match[3][$i])->url;
+	$message=$match[6][$i]."/".$match[7][$i]." ".$match[1][$i]." ".$match[2][$i]."：".$match[4][$i]."  "."http://www.tngs.tn.edu.tw".$match[3][$i];
 	echo $message."\n";
 	if(!in_array($match[3][$i], $list)){
 		$count++;
