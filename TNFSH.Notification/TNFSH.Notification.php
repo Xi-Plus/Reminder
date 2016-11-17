@@ -49,7 +49,7 @@ for ($i=0; $i < $length ; $i++) {
 	echo $message."\n";
 	if(!in_array($checktext, $list)){
 		$count++;
-		$postmessage.=$message."\n";
+		$postmessage.=strip_tags($message)."\n";
 		echo "YES\n";
 		$query=new query;
 		$query->dbname="reminder";
